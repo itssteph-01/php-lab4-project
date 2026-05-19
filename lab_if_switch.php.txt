@@ -1,0 +1,179 @@
+
+
+<?php
+echo "<h2>PHP If Statements</h2>";
+
+
+$age = 19;
+if($age >= 19){
+echo "Lab 1: You are eligible to vote<br><br>";
+}
+
+
+$num = 5;
+if($num > 0){
+echo "Lab 2: Positive number<br><br>";
+} else {
+echo "Lab 2: Negative number<br><br>";
+}
+
+
+$grade = 85;
+
+if($grade >= 90){
+echo "Lab 3: Excellent<br><br>";
+} elseif($grade >= 80){
+echo "Lab 3: Good<br><br>";
+} elseif($grade >= 70){
+echo "Lab 3: Average<br><br>";
+} else {
+echo "Lab 3: Failed<br><br>";
+}
+
+
+$n = 7;
+if($n % 2 == 0){
+echo "Lab 4: Even number<br><br>";
+} else {
+echo "Lab 4: Odd number<br><br>";
+}
+
+
+$a = 10;
+$b = 25;
+$c = 15;
+
+if($a >= $b && $a >= $c){
+echo "Lab 5: Largest is $a<br><br>";
+} elseif($b >= $a && $b >= $c){
+echo "Lab 5: Largest is $b<br><br>";
+} else {
+echo "Lab 5: Largest is $c<br><br>";
+}
+
+
+$password = "admin123";
+$userInput = "admin123";
+
+if($userInput == $password){
+echo "Lab 6: Access Granted<br><br>";
+} else {
+echo "Lab 6: Access Denied<br><br>";
+}
+
+
+$year = 2006;
+
+if(($year % 4 == 0 && $year % 100 != 0) || ($year % 400 == 0)){
+echo "Lab 7: Leap Year<br><br>";
+} else {
+echo "Lab 7: Not Leap Year<br><br>";
+}
+
+
+$age2 = 20;
+$citizen = "Filipino";
+
+if($age2 >= 18){
+if($citizen == "Filipino"){
+echo "Lab 8: Eligible to vote<br><br>";
+}
+}
+
+
+$amount = 1200;
+$discount = 0;
+
+if($amount >= 1000){
+$discount = $amount * 0.20;
+} elseif($amount >= 500){
+$discount = $amount * 0.10;
+}
+
+echo "Lab 9: Discount = $discount<br><br>";
+
+
+$username = "admin";
+$pass = "1234";
+
+if($username == "admin" && $pass == "1234"){
+echo "Lab 10: Login Successful<br><br>";
+} else {
+echo "Lab 10: Login Failed<br><br>";
+}
+
+echo "<hr>";
+echo "<h2>PHP Switch Statements</h2>";
+
+
+$day = 3;
+
+switch($day){
+case 1: echo "Lab 11: Monday<br><br>"; break;
+case 2: echo "Lab 11: Tuesday<br><br>"; break;
+case 3: echo "Lab 11: Wednesday<br><br>"; break;
+case 4: echo "Lab 11: Thursday<br><br>"; break;
+case 5: echo "Lab 11: Friday<br><br>"; break;
+case 6: echo "Lab 11: Saturday<br><br>"; break;
+case 7: echo "Lab 11: Sunday<br><br>"; break;
+}
+
+
+$gradeLetter = "A";
+
+switch($gradeLetter){
+case "A": echo "Lab 12: Excellent<br><br>"; break;
+case "B": echo "Lab 12: Good<br><br>"; break;
+case "C": echo "Lab 12: Average<br><br>"; break;
+case "D": echo "Lab 12: Poor<br><br>"; break;
+case "F": echo "Lab 12: Failed<br><br>"; break;
+}
+
+
+$x = 27;
+$y = 4;
+$op = "+";
+
+switch($op){
+case "+": echo "Lab 13: " . ($x + $y) . "<br><br>"; break;
+case "-": echo "Lab 13: " . ($x - $y) . "<br><br>"; break;
+case "*": echo "Lab 13: " . ($x * $y) . "<br><br>"; break;
+case "/": echo "Lab 13: " . ($x / $y) . "<br><br>"; break;
+}
+
+
+$menu = 2;
+
+switch($menu){
+case 1: echo "Lab 14: Add<br><br>"; break;
+case 2: echo "Lab 14: Edit<br><br>"; break;
+case 3: echo "Lab 14: Delete<br><br>"; break;
+}
+
+
+$month = 10;
+
+switch($month){
+case 1: echo "Lab 15: January<br>"; break;
+case 2: echo "Lab 15: February<br>"; break;
+case 3: echo "Lab 15: March<br>"; break;
+case 4: echo "Lab 15: April<br>"; break;
+case 5: echo "Lab 15: May<br>"; break;
+case 6: echo "Lab 15: June<br>"; break;
+case 7: echo "Lab 15: July<br>"; break;
+case 8: echo "Lab 15: August<br>"; break;
+case 9: echo "Lab 15: September<br>"; break;
+case 10: echo "Lab 15: October<br>"; break;
+case 11: echo "Lab 15: November<br>"; break;
+case 12: echo "Lab 15: December<br>"; break;
+}
+
+
+$color = "green";
+
+switch($color){
+case "red": echo "<br>Lab 16: Stop"; break;
+case "yellow": echo "<br>Lab 16: Ready"; break;
+case "green": echo "<br>Lab 16: Go"; break;
+}
+?>
